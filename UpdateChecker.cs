@@ -15,7 +15,7 @@ namespace UpdateStuff
 
 public class Updater : MonoBehaviour
 {
-    [SeralizeField] [TextArea(1, 5)] string JsonUrl; //the url of your JSON file
+    [SerializeField] [TextArea(1, 5)] string JsonUrl; //the url of your JSON file
     static bool HasAlradyCheckedForUpdates = false;
     UpdateStuff.GameData LastData;
     

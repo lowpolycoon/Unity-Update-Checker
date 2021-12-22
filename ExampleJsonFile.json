@@ -1,5 +1,5 @@
 {
-	"Desc" : "there is a new update aviable now, click on update to download it",
-	"Ver" : "b0.1",
-	"URL" : "http://rind029stuff.000webhostapp.com/TBU.html"
+	"description" : "new version aviable!",
+	"version" : "1.1",
+	"link" : "www.mywebsite.com/mygame/download"
 }

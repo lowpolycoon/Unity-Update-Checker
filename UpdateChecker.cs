@@ -40,6 +40,7 @@ public class Updater : MonoBehaviour
         
         if(request.isDone)
         {
+            // the request succeed
             LastData = JsonUtility.FromJson<UpdateStuff.GameData>(request.downloadHandler.text);
             if(!Application.version.Equals(LastData))
             {

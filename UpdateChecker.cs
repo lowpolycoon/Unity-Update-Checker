@@ -23,15 +23,15 @@ public class Updater : MonoBehaviour
     {
         if(!HasAlradyCheckedForUpdates)
         {
-            StopAllCorutines();
-            StartCorutine(checkUpdates());
+            StopAllCoroutines();
+            StartCoroutine(checkUpdates());
             Debug.Log("Checking for updates");
         }
     }
     
     IEnumerator checkUpdates()
     {
-        UnityWebRequest request = UnityWebRequest.Get(jsonDataURL);
+        UnityWebRequest request = UnityWebRequest.Get(JsonUrl);
         request.chunkedTransfer = false;
         request.disposeDownloadHandlerOnDispose = true;
         request.timeout = 60;

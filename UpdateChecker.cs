@@ -38,7 +38,7 @@ public class Updater : MonoBehaviour
         
         yield return request.Send();
         
-        if(request.IsDone)
+        if(request.isDone)
         {
             LastData = JsonUtility.FromJson<UpdateStuff.GameData>(request.downloadHandler.text);
             if(!Application.version.Equals(LastData))
